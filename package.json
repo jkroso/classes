@@ -1,0 +1,17 @@
+{
+  "name": "classes",
+  "version": "1.0.0",
+  "description": "x-browser class manipulation",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jkroso/classes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jkroso/classes/issues"
+  },
+  "keywords": ["dom", "html", "classList", "class", "ui"],
+  "author": "Jake Rosoman",
+  "license": "MIT"
+}

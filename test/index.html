@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>classes tests</title>
+	<link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+</head>
+<body>
+	<div id="mocha"></div>
+	<script>
+		var mocha = require('mocha')
+		mocha.setup('bdd')
+		mocha.timeout(200)
+
+		require('./classes.test')
+
+		mocha.run(function(){
+			console.log('Done!')
+		})
+	</script>
+</body>
+</html>
