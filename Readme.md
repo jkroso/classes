@@ -23,7 +23,7 @@ var classes = require('classes')
 
 ### remove(name, el)
 
-  Remove `name` if present
+  Remove `name` if present. If name is a `RegExp` it will act like `removeMatching()`.
 
 ### removeMatching(re, el)
 

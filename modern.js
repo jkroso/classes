@@ -14,12 +14,15 @@ exports.add = function(name, el){
 /**
  * Remove `name` if present
  *
- * @param {String} name
+ * @param {String|RegExp} name
  * @param {Element} el
  * @api public
  */
 
 exports.remove = function(name, el){
+	if (name instanceof RegExp) {
+		return exports.removeMatching(name, el)
+	}
 	el.classList.remove(name)
 }
 

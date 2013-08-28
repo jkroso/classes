@@ -10,6 +10,9 @@ exports.add = function(name, el){
 }
 
 exports.remove = function(name, el){
+	if (name instanceof RegExp) {
+		return exports.removeMatching(name, el)
+	}
 	var arr = exports.array(el)
 	var i = index(arr, name)
 	if (i >= 0) {

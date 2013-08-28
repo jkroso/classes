@@ -49,6 +49,14 @@ function test(classes){
 		})
 	})
 
+	describe('.remove(regexp)', function(){
+		it('should act like .removeMatching()', function(){
+			el.className = 'foo item-1 item-2 bar'
+			classes.removeMatching(/^item-/, el)
+			assert('foo bar' == el.className)
+		})
+	})
+
 	describe('.removeMatching(regexp)', function(){
 		it('should remove matching classes', function(){
 			el.className = 'foo item-1 item-2 bar'
